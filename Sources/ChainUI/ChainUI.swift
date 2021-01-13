@@ -464,3 +464,21 @@ public extension UITabBarItem {
     }
 }
 
+
+
+public extension UINavigationBar {
+    
+    
+    @discardableResult func set(backgroundImage: UIImage?, state: UIBarMetrics) -> Self {
+        setBackgroundImage(backgroundImage, for: state)
+        return self
+    }
+    
+    
+    @discardableResult func set(shadowImage: UIImage?) -> Self {
+        self.shadowImage = shadowImage
+        return self
+    }
+    
+    
+}
